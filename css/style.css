@@ -9,8 +9,11 @@ html, body {
 #header {
 	width: 100%;
 	position: fixed;
+	top: 0;
+	left: 0;
 	height: 70px;
 	background-color: #4dcffa;
+	z-index: 1;
 }
 
 #logo {
@@ -42,4 +45,23 @@ html, body {
 	position: absolute;
 	top: 18px;
 	right: 95px;
+}
+
+.f7main {
+	width: 100%;
+	background-image: url('../images/f7_background.jpg');
+	height: 1400px;
+	background-size: cover;
+	margin-top: 70px;
+	color: #ffffff;
+}
+
+.grid_content1 {
+	padding-top: 400px;
+	text-align: center;
+}
+
+.grid_content2 {
+	padding-top: 50px;
+	text-align: center;
 }
