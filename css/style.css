@@ -1,6 +1,45 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
+}
+
 #header {
 	width: 100%;
 	position: fixed;
+	height: 70px;
+	background-color: #4dcffa;
+}
+
+#logo {
+	width: 250px;
+	margin: 5px 0 0 20px;
+}
+
+#point_holder {
 	height: 50px;
-	background-color: ;
+	width: 60px;
+	background-color: #4dcffa;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	float: right;
+	position: absolute;
+	top: 6px;
+	right: 20px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#points {
+	font-size: 2em;
+}
+
+#user {
+	color: #ffffff;
+	text-align: right;
+	position: absolute;
+	top: 18px;
+	right: 95px;
 }
