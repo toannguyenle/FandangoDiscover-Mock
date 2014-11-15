@@ -3,43 +3,64 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Profile</title>
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a href="profile.html">
-  	<div id="header">
-  		<div>
-  			<img src="images/logo.png" id="logo">
-  		</div>
-  		<div id="user">
-  			USERNAME@GMAIL.COM<br>
-  			LOGOUT
-  		</div>
-  		<div id="point_holder">
-  			<div class="points">0</div>
-  			points
-  		</div>
-  	</div>
+    <div id="header">
+      <div>
+        <img src="images/logo.png" id="logo">
+      </div>
+      <div id="user">
+        USERNAME@GMAIL.COM<br>
+        LOGOUT
+      </div>
+      <div id="point_holder">
+        <div class="points">0</div>
+        points
+      </div>
+    </div>
   </a>
 
   <div id="userprofile">
     <div class="container-fluid">
-      <div class="row">
-         <div class="col-xs-12 col-sm-12 col-md-12">POINT COUNTER</div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12" id="pointtracker">POINT TRACKER</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2" id="userimage">image</div>
+          <div class="col-xs-10 col-sm-10 col-md-10" id="userinfo">
+            <h4>Person Name</h4>
+            <p>FAVORITE MOVIES // Toy Story, The Departed, The Graduate, Amelie, Grand Budapest Hotel</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4" id="movieinfo">movie</div>
+          <div class="col-xs-12 col-sm-4 col-md-4" id="movieinfo">movie</div>
+          <div class="col-xs-12 col-sm-4 col-md-4" id="movieinfo">movie</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12" id="leaderboard">
+            <h5>LEADER BOARD</h5>
+            <ul>
+              <li>Name</li>
+              <li>Name</li>
+              <li>Name</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2" id="userimage">image</div>
-        <div class="col-xs-10 col-sm-10 col-md-10" id="userinfo">profile info</div>
-      </div>
-      <div class="row"></div>
-      <div class="row"></div>
+      <div class="col-lg-2"></div>
     </div>
   </div>
-	
-	
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  
+  
 <script src="script/main.js"></script>
-<script src="script/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
