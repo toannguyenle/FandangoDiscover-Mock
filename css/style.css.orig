@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
 	padding: 0;
 	margin: 0;
 /*	width: 100%;
@@ -42,9 +42,13 @@ html, body {
 	position: absolute;
 	top: 18px;
 	right: 95px;
+<<<<<<< HEAD
+}*/
+=======
 }
 
 #userprofile {
   padding-top: 100px;
 }
 
+>>>>>>> origin/steph
