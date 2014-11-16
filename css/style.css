@@ -4,6 +4,8 @@ html, body {
 	width: 100%;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 12px;
+	background-color: #4dcffa;
+	overflow-x: hidden;
 }
 
 #header {
@@ -18,7 +20,7 @@ html, body {
 
 #logo {
 	width: 250px;
-	margin: 5px 0 0 20px;
+	margin: 7px 0 0 20px;
 }
 
 #point_holder {
@@ -63,6 +65,7 @@ html, body {
 	color: #ffffff;
 	background-repeat: no-repeat;
 	background-color: #120f16;
+	overflow-x: hidden;
 }
 
 .challenge_title {
@@ -154,7 +157,7 @@ html, body {
 }
 
 #userprofile {
-  padding-top: 70px;
+  padding-top: 72px;
   color: #fff;
 }
 
@@ -174,6 +177,11 @@ html, body {
   height: 100px;
   width: 100px;
   background-color: rgb(130,130,130);
+}
+
+#badge {
+	float: right;
+	padding-right: 100px;
 }
 
 .row-centered {
@@ -197,4 +205,12 @@ html, body {
 
 #extrapadding {
   margin: 10px;
+}
+
+#rewards {
+	margin: 0 auto;
+	background-color: #00e130;
+	color: #fff;
+	font-size: 1.7em;
+	height: 400px;
 }
