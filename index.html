@@ -2,29 +2,255 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Index</title>
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js">
+	<title>Fast 7</title>
 
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<!-- google font -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+	<!-- font awesome icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- custom style sheet -->
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<a href="profile.html">
-	<div id="header">
+
+	<div id="header" class="animated fadeInDown">
 		<div>
-			<img src="images/logo.png" id="logo">
+			<div id="fd-logo"><img src="images/logo.png" id="logo"></div>
 		</div>
-		<div id="user">
-			USERNAME@GMAIL.COM<br>
+		<div id="fd-user">
+		<div id="user" class="visible-xl-block visible-lg-block visible-md-block visible-sm-block">
+			SARAH.THOMPSON@GMAIL.COM<br>
 			LOGOUT
 		</div>
+
 		<div id="point_holder">
 			<div class="points">0</div>
-			points
+			<div class="points_label">points</div>
+		</div>
 		</div>
 	</div>
-</a>
-	
+
+<!-- Home Page -->
+<div id="home" style="display: inline;">
+	<div class="first_movie animated fadeInUp">
+		<div id="fd-f7"><img src="images/f7_index.jpg" class="image_deck"></div>
+	</div>
+
+	<div class="movie animated fadeInUp">
+		<img src="images/jurassic_index.jpg" class="image_deck">
+	</div>
+
+	<div class="movie animated fadeInUp">
+		<img src="images/minions_index.jpg" class="image_deck">
+	</div>
+
+	<div class="movie animated fadeInUp">
+		<img src="images/ted2_index.jpg" class="image_deck">
+	</div>
+</div>
+
+<!-- F7 Page -->
+<div id="f7" style="display: inline;">
+	<div class="f7main animated fadeInUp">
+			<div class="row desktop_spacer visible-xl-block visible-lg-block"></div>
+			<div class="row mobile_spacer visible-md-block visible-sm-block visible-xs-block"></div>
+			<!-- row 1 icons -->
+			<div class="row grid_content1">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-2">
+					<a href="http://www.fandango.com/furious7_172963/movieoverview" target="_blank"><i class="fa fa-ticket fa-5x animated flip" id="buy_tickets"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="buy_tickets_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Buy Tickets</div><br>
+					300 points
+				</div>
+				<div class="col-lg-2">
+					<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/uA59s-f8WqM">
+					<i class="fa fa-video-camera fa-5x animated flip" id="watch_trailer"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="watch_trailer_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Watch Trailer</div><br>
+					10 points
+				</div>
+
+				<div class="col-lg-2">
+					<a href="#" data-toggle="modal" data-target="#mapModal" data-theVideo="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.3214611177013!2d-118.353378!3d34.138117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be4f253238cf%3A0xd3dd5027799c9a71!2sUniversal+Studios+Hollywood!5e0!3m2!1sen!2sus!4v1416116190841">
+					<i class="fa fa-location-arrow fa-5x animated flip" id="check_in"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="check_in_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Check-In</div><br>
+					20 points
+				</div>
+				<div class="col-lg-2">
+					<i class="fa fa-graduation-cap fa-5x animated flip" id="quiz"></i>
+					<i class="fa fa-check-circle fa-5x animated flip" id="quiz_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Quiz</div><br>
+					10 points
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+
+			<!-- row 2 icons -->
+			<div class="row grid_content2">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-2">
+					<a href="https://www.facebook.com/FF7OF" target="_blank"><i class="fa fa-facebook-square fa-5x animated flip" id="fb_like"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="fb_like_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Like</div><br>
+					10 points
+				</div>
+				<div class="col-lg-2">
+					<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.fandango.com/furious7_172963/movieoverview&t=Fast%20andFurious%207" target="_blank"><i class="fa fa-facebook fa-5x animated flip" id="fb_share"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="fb_share_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Share</div><br>
+					15 points
+				</div>
+				<div class="col-lg-2">
+					<a href="https://twitter.com/ff7movie" target="_blank"><i class="fa fa-twitter-square fa-5x animated flip" id="twitter_follow"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="twitter_follow_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Follow</div><br>
+					10 points
+				</div>
+				<div class="col-lg-2">
+					<a href="http://twitter.com/intent/tweet?url=http://www.fandango.com/furious7_172963/movieoverview&text=Check%20out%20Fast%20and%20Furious%207" target="_blank">
+					<i class="fa fa-twitter fa-5x animated flip" id="twitter_share"></i></a>
+					<i class="fa fa-check-circle fa-5x animated flip" id="twitter_share_check" style="display:none;color:green;"></i><br>
+					<div class="challenge_title">Tweet</div><br>
+					15 points
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+	</div>
+
+
+	<!-- winner declaration -->
+	<div id="winner" style="display:none;">
+		<span style="font-size: 66px;font-weight:bold;">CONGRATULATIONS!</span><br>
+		You've unlocked a free movie ticket from Fandango.<br>
+		Enter Promo Code "4GX7T9073"<br><br>
+		<a href="http://www.fandango.com/"><div class="ticket_button">REDEEM TICKET</button></a>
+	</div>
+
+	<!-- trailer modal -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <div>
+	                    <iframe width="100%" height="350" src=""></iframe>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<!-- map modal -->
+	<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModal" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <div>
+	                    <iframe width="100%" height="350" src=""></iframe>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<script>
+		  autoPlayYouTubeModal();
+
+	  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+	  function autoPlayYouTubeModal() {
+	      var trigger = $("body").find('[data-toggle="modal"]');
+	      trigger.click(function () {
+	          var theModal = $(this).data("target"),
+	              videoSRC = $(this).attr("data-theVideo"),
+	              videoSRCauto = videoSRC + "?autoplay=1";
+	          $(theModal + ' iframe').attr('src', videoSRCauto);
+	          $(theModal + ' button.close').click(function () {
+	              $(theModal + ' iframe').attr('src', videoSRC);
+	          });
+	      });
+	  }
+	</script>
+</div>
+
+<!-- Profile Page -->
+	<div id="profile" style="display: inline;" class="animated fadeInUp">
+		<div id="userprofile"  class="animated fadeInUp">
+	    <div class="container-fluid" style="background-color: #913fff;">
+	      <div class="col-lg-12" style="padding: 0 100px 0 100px;">
+	        <br><br>
+	        <div class="row">
+	          <div class="col-xs-2 col-sm-2 col-md-2"><img src="images/girl.jpg" style="width:190px;margin-left:-14px;"></div>
+	          <div class="col-xs-10 col-sm-10 col-md-10" id="userinfo">
+	            <h4>Sara Thompson</h4>
+	            <p>FAVORITE MOVIES : Toy Story, The Departed, The Graduate, Grand Budapest Hotel</p>
+	          </div>
+	        </div>
+
+	        <div class="row" style="padding-bottom: 30px;">
+	        	<h2 id="leader_title">My Movies</h2>
+	          <div class="col-xs-12 col-sm-4 col-md-4 extrapadding" id="movieinfo">
+	            <img src="http://howsyourrobot.com/wp-content/uploads/2014/10/Interstellar-IMAX-banner.jpg">
+	          </div>
+	          <div class="col-xs-12 col-sm-4 col-md-4 extrapadding" id="movieinfo">
+	            <img src="http://www.beyondhollywood.com/uploads/2014/01/Noah-2014-Movie-Title-Banner.jpg">
+	          </div>
+	          <div class="col-xs-12 col-sm-4 col-md-4 extrapadding" id="movieinfo">
+	            <img src="http://www.beyondhollywood.com/uploads/2014/06/Fury-2014-Movie-Banner-Poster.jpg">
+	          </div>
+
+	        </div>
+	        <br>
+	      </div>
+	    </div>
+	  </div>
+
+	         <div class="row">
+	          <div class="col-lg-4" style="background-color:#ff8400;height:400px;"></div>
+	          <div class="col-lg-4" id="leaderboard">
+	            <h2 id="leader_title" style="padding-top: 20px;">LEADER BOARD</h2>
+			            <div style="width:200px;float:left">
+			            Joe Smith<br>
+			            Jane Doe<br>
+			            Jill Henderson<br>
+			            Matembe Lampur<br>
+			            Jack Cheng<br>
+			            Joe Schmoe<br>
+			            Farhan Khan<br>
+			            Eric Oh<br>
+			            Toan Nguyen<br>
+			            Brian Cottrell
+			        	</div>
+
+			        	<div style="width:200px;float:right;text-align:right;">
+			            1275 points<br>
+			            1125 points<br>
+			            985 points<br>
+			            875 points<br>
+			            775 points<br>
+			            650 points<br>
+			            500 points<br>
+			            450 points<br>
+			            425 points<br>
+			            245 points
+			        	</div>
+	          </div>
+	          <div class="col-lg-4" style="background-color:#ff8400;height:400px;"></div>
+	        </div>
+	 	</div>
+
 <script src="script/main.js"></script>
 </body>
 </html>
